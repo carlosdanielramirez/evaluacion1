@@ -23,6 +23,18 @@ const routes: Routes = [
     path: 'mis-asignaturas',
     loadChildren: () => import('./mis-asignaturas/mis-asignaturas.module').then( m => m.MisAsignaturasPageModule)
   },
+  {
+    path: 'mi-asistencia',
+    loadChildren: () => import('./mi-asistencia/mi-asistencia.module').then( m => m.MiAsistenciaPageModule)
+  },
+  {
+    path: 'resgistro-asistencia',
+    loadChildren: () => import('./resgistro-asistencia/resgistro-asistencia.module').then( m => m.ResgistroAsistenciaPageModule)
+  },
+  {
+    path: 'cambiarclave',
+    loadChildren: () => import('./cambiarclave/cambiarclave.module').then( m => m.CambiarclavePageModule)
+  },
 ];
 
 @NgModule({
