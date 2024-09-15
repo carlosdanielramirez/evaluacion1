@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>ingresousuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <label>Nombre</label>
+  <ion-item>
+    <ion-label>Nombre:</ion-label><input type="text" [(ngModel)]="nombre">
+  </ion-item>
+  <ion-item>
+    <ion-label>Clave:</ion-label><input type="text" [(ngModel)]="clave">
+  </ion-item>
+  <ion-button (click)="ingresar()">
+    <ion-icon slot="icon-only" name="add"></ion-icon>
+  </ion-button>
+</ion-content>
