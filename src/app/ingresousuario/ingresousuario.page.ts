@@ -34,4 +34,13 @@ export class IngresousuarioPage implements OnInit {
     }
  
    }
+   async restablecerclave() {
+    const alerta = await this.alertController.create({
+      header: 'Restablecer Clave',
+      message: `Se ha enviado un correo para restablecer la clave del usuario ${this.nombre}.`,
+      buttons: ['OK']
+    });
+    await alerta.present();
   }
+}
+  
