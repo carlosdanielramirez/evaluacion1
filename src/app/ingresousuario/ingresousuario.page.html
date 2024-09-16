@@ -6,19 +6,19 @@
 
 <ion-content [fullscreen]="true">
   <br>
-  <label>Bienvenido</label>
+  <h2 style="text-align: center;">¡Bienvenido!</h2>
   <br> <br> 
   <ion-item>
-    <ion-label>Nombre:</ion-label><input type="text" [(ngModel)]="nombre">
+    <ion-label></ion-label><input type="text" [(ngModel)]="nombre" placeholder="Nombre" style="margin-right: 60px;">
   </ion-item>
   <ion-item>
-    <ion-label>Clave:</ion-label><input type="password" [(ngModel)]="clave">
+    <ion-label></ion-label><input type="password" [(ngModel)]="clave" placeholder="Clave" style="margin-right: 60px;">
   </ion-item>
-  <ion-button color="primary" shape="round" fill="outline" expand="block"(click)="ingresar()"> Ingresar
+  <ion-button color="primary" shape="round" fill="outline" (click)="ingresar()" style="padding-left: 125px;"> Ingresar
     <ion-icon slot="icon-only" name="enter"></ion-icon>
   </ion-button>
 
-  <ion-button color="primary" shape="round" fill="outline" expand="block" (click)="restablecerclave()">restablecer clave
+  <ion-button color="primary" shape="round" fill="outline" style="padding-left: 75px;" (click)="restablecerclave() ">restablecer clave
     <ion-icon slot="icon-only" name="create"></ion-icon>
   </ion-button>
 </ion-content>
