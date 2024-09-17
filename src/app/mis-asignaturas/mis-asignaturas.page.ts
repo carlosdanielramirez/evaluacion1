@@ -13,8 +13,6 @@ export class MisAsignaturasPage implements OnInit {
     {nombre: "Calidad de Software", seccion3: "CSY4111"},
   ]
 
-
-
   constructor() { }
 
   ngOnInit() {

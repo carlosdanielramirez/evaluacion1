@@ -1,15 +1,19 @@
 import { Component, OnInit } from '@angular/core';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-resgistro-asistencia',
   templateUrl: './resgistro-asistencia.page.html',
   styleUrls: ['./resgistro-asistencia.page.scss'],
 })
-export class ResgistroAsistenciaPage implements OnInit {
+export class ResgistroAsistenciaPage{
+
+  mostrarQR: boolean = false;
 
   constructor() { }
 
-  ngOnInit() {
-  }
 
+  registrarAsistencia() {
+    this.mostrarQR = true;
+  }
 }

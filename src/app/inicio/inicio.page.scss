@@ -22,3 +22,20 @@
     border: 2px solid #fff;    /* Borde blanco */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
   }
+
+  label{
+    color: rgb(0, 0, 0);
+     }
+
+     ion-item:hover {
+      --background: rgb(255, 218, 114);
+    }
+
+    body {
+      background-color: black;
+    }
+
+    ion-toolbar {
+      --background: #000a29; 
+      --color: #ffffff;      
+    }

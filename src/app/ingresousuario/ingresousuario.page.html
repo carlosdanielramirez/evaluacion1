@@ -4,21 +4,22 @@
   </ion-toolbar>
 </ion-header>
 
+
 <ion-content [fullscreen]="true">
   <br>
   <h2 style="text-align: center;">¡Bienvenido!</h2>
   <br> <br> 
   <ion-item>
-    <ion-label></ion-label><input type="text" [(ngModel)]="nombre" placeholder="Nombre" style="margin-right: 60px;">
+    <ion-label></ion-label><input type="text"  [(ngModel)]="nombre" placeholder="Nombre" style="margin-right: 60px;">
   </ion-item>
   <ion-item>
     <ion-label></ion-label><input type="password" [(ngModel)]="clave" placeholder="Clave" style="margin-right: 60px;">
   </ion-item>
-  <ion-button color="primary" shape="round" fill="outline" (click)="ingresar()" style="padding-left: 125px;"> Ingresar
+  <ion-button color="primary" fill="outline" (click)="ingresar()" style="padding-left: 125px;"> Ingresar
     <ion-icon slot="icon-only" name="enter"></ion-icon>
   </ion-button>
 
-  <ion-button color="primary" shape="round" fill="outline" style="padding-left: 75px;" (click)="restablecerclave() ">restablecer clave
+  <ion-button color="danger"  fill="outline" style="padding-left: 55px;" (click)="restablecerclave() ">restablecer contraseña
     <ion-icon slot="icon-only" name="create"></ion-icon>
   </ion-button>
 </ion-content>
