@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MisAsignaturasPage implements OnInit {
 
+  asignaturas = [
+    {nombre: "Programacion", seccion1: "PGY4121"},
+    {nombre: "Ingles", seccion2: "INI5111"},
+    {nombre: "Calidad de Software", seccion3: "CSY4111"},
+  ]
+
+
+
   constructor() { }
 
   ngOnInit() {
