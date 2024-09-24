@@ -1,25 +1,31 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Ingreso de usuario</ion-title>
+    <ion-title class="header-title">Ingreso de Usuario</ion-title>
   </ion-toolbar>
 </ion-header>
 
+<ion-content [fullscreen]="true" class="custom-background">
+  <div class="welcome-container">
+    <h2 class="welcome-text">¡Bienvenido!</h2>
+  </div>
 
-<ion-content [fullscreen]="true">
-  <br>
-  <h2 style="text-align: center;">¡Bienvenido!</h2>
-  <br> <br> 
-  <ion-item>
-    <input type="text"  [(ngModel)]="nombre" placeholder="Nombre" style="margin-left: 60px;">
-  </ion-item>
-  <ion-item>
-    <input type="password" [(ngModel)]="clave" placeholder="Clave" style="margin-left: 60px;">
-  </ion-item>
-  <ion-button color="primary" fill="outline" (click)="ingresar()" style="padding-left: 125px;"> Ingresar
-    <ion-icon slot="icon-only" name="enter"></ion-icon>
-  </ion-button>
+  <ion-card class="login-card">
+    <ion-item class="custom-item">
+      <ion-input type="text" [(ngModel)]="nombre" placeholder="Nombre" class="custom-input"></ion-input>
+    </ion-item>
 
-  <ion-button color="danger"  fill="outline" style="padding-left: 55px;" (click)="restablecerclave() ">restablecer contraseña
-    <ion-icon slot="icon-only" name="create"></ion-icon>
-  </ion-button>
+    <ion-item class="custom-item">
+      <ion-input type="password" [(ngModel)]="clave" placeholder="Clave" class="custom-input"></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" color="primary" class="custom-button" (click)="ingresar()">
+      Ingresar
+      <ion-icon slot="end" name="enter"></ion-icon>
+    </ion-button>
+
+    <ion-button expand="block" color="danger" class="custom-button-outline" fill="outline" (click)="restablecerclave()">
+      Restablecer Contraseña
+      <ion-icon slot="end" name="create"></ion-icon>
+    </ion-button>
+  </ion-card>
 </ion-content>
