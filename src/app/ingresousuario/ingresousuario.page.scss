@@ -62,3 +62,19 @@ ion-toolbar {
   --background: #000a29;
   --color: #ffffff;
 }
+.profile-container {
+  display: flex;
+  justify-content: center;   
+  align-items: center;       
+  margin-top: 20px;  
+  margin-bottom: 20px;        
+  height: auto;             
+}
+
+.profile-image {
+  width: 120px; 
+  height: 120px; 
+  object-fit: cover;
+  border-radius: 50%;
+  
+}

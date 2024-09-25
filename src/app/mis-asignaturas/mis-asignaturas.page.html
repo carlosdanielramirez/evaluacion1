@@ -6,8 +6,6 @@
 
 <ion-content [fullscreen]="true">
 <br>
-<h2>Listado de asignaturas</h2>
-
 <ion-accordion-group>
   <ion-accordion value="first">
     <ion-item slot="header" color="light">
@@ -29,6 +27,20 @@
     </ion-item>
     <div *ngFor="let asignatura of asignaturas"
      class="ion-padding" slot="content" style="padding: 0; margin: 15px;">{{ asignatura.seccion3}}</div>
+  </ion-accordion>
+  <ion-accordion value="fourth">
+    <ion-item slot="header" color="light">
+      <ion-label>Arquitectura</ion-label>
+    </ion-item>
+    <div *ngFor="let asignatura of asignaturas"
+     class="ion-padding" slot="content" style="padding: 0; margin: 15px;">{{ asignatura.seccion4}}</div>
+  </ion-accordion>
+  <ion-accordion value="fifth">
+    <ion-item slot="header" color="light">
+      <ion-label>Estadistica Descriptiva</ion-label>
+    </ion-item>
+    <div *ngFor="let asignatura of asignaturas"
+     class="ion-padding" slot="content" style="padding: 0; margin: 15px;">{{ asignatura.seccion5}}</div>
   </ion-accordion>
 </ion-accordion-group>
 

@@ -18,6 +18,8 @@ export class IngresousuarioPage implements OnInit {
   {
     if(this.nombre === 'Usuario1' && this.clave === 'MiClav3')
     {
+      this.nombre = '';
+      this.clave = '';
       this.router.navigate(['/inicio']);
     }
   else {

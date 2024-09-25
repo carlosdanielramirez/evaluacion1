@@ -8,16 +8,12 @@ import { Router } from '@angular/router';
 })
 export class InicioPage implements OnInit {
 
-  nombreUsuario: string = 'Usuario1'; 
+  nombreUsuario= 'Usuario1'; 
 
   constructor(private router: Router) { } 
 
   ngOnInit() {
-    this.nombreUsuario = this.obtenerNombreUsuario(); 
-  }
-
-  obtenerNombreUsuario(): string {
-    return 'Usuario1'; 
+   
   }
 
   cerrarSesion() {
